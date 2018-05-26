@@ -1,0 +1,4 @@
+1.3:
+The admin edits the new faq.
+And The client displays new info.
+

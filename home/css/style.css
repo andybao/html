@@ -1,0 +1,51 @@
+body {
+    background-color: linen;
+}
+
+.container {
+    text-align:center;
+    padding: 1em;
+    margin: 1em;
+    background-color: silver;
+    border: 2px solid black;
+}
+
+fieldset {
+    border: 2px solid black;
+    margin: 1em;
+    background-color: gainsboro;
+    padding: 1em;
+}
+legend {
+    background-color: thistle;
+    border: 2px solid black;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1.5em;
+}
+p {
+    margin: 0.5em;
+}
+hr {
+    color: black;
+    background-color: black;
+    height: 2px;
+    padding: 0px;
+    border: 0px;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+}
