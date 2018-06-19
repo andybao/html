@@ -1,0 +1,6 @@
+3.2
+OK, It's my turn.
+I am not sure how many points I can get,
+because I cannot see the screen. :(
+It's only for demo mouse control.
+

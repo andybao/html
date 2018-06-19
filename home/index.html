@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>andybao.net</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="home/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="home/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="home/ico/favicon-16x16.png">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></scrip>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119815602-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119815602-1');
+    </script>
+    <link rel="stylesheet" type="text/css" href="home/css/style.css"/>
+</head>
+<body>
+    <div id="animation" class="d-none d-xl-block">
+        <div id="demo-show" class="h-100 m-100 row">
+            <div class="col-lg-4 demo-div" id="demo-show-client">
+                <iframe class="w-100 h-100" id="clientIFrame" src="http://andybao.net/"></iframe>
+            </div>
+            <div class="col-lg-4 demo-div">
+                <iframe class="w-100 h-100" id="adminIFrame" src="http://andybao.net/"></iframe>
+            </div>
+            <div class="col-lg-3 demo-div d-flex flex-column">
+                <div><button class="w-100" id="skip_animation">Skip Animation</button></div>
+                <div class=""><pre id="work-text" style="font-size: large; max-height: 470px;"></pre></div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-link" id="f_c_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="f_a_create_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="f_a_edit_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="f_a_delete_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="h_c_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="h_a_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="g_v_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="g_p_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="about_btn" disabled></button>
+                    <button type="button" class="btn btn-link" id="final_btn" disabled></button>
+                </div>
+                <div class="mt-auto" style="display: none" id="card">
+                    <img src="home/img/contact.png" alt="andybao business card" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="home" class="d-xl-none">
+        <header>
+            <div id="title">
+                <h1>me@andybao.net</h1>
+                <p>A Web Developer and Software Development Engineer in Test   <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/baowenyu" data-format="hover" data-related="false"></script></p>
+            </div>
+        </header>
+
+        <fieldset>
+            <legend>Faq</legend>
+            <p>FAQ is a single page content management system which is developed by PHP, ajax and mySQL.</p>
+            <p>It allows admin to manage content in mySql database.</p>
+
+            <ul>
+                <li><a href="https://github.com/andybao/portfolio/tree/master/faq">GitHub repository</a></li>
+                <li><a href="http://andybao.net/portfolio/faq/admin/faq_admin.php">Try it</a></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Portfolio Show</legend>
+            <p>Portfolio Show uses python and selenium to demo four different web apps</p>
+            <ul>
+                <li><a href="https://github.com/andybao/portfolio/blob/master/script/profolio.py">GitHub repository - script</a></li>
+                <li><a href="https://github.com/andybao/portfolio/tree/master/home">GitHub repository - web page</a></li>
+                <li><a href="https://youtu.be/-2IqZtmVcUw">Video Demo on YouTube</a></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Star Wars</legend>
+            <p>This is a simple game like Raiden. It is developed by Javascript</p>
+            <ul>
+                <li><a href="https://github.com/andybao/portfolio/tree/master/game">GitHub repository</a></li>
+                <li><a href="http://andybao.net/portfolio/game/game.html">Try it</a></li>
+                <li><a href="https://youtu.be/RSCfa2mvY6o">Video Demo on YouTube</a></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>MediaTestRunner</legend>
+            <p>MediaTestRunner is an Android automation testing tool. It uses Android MediaPlayerControl to test media codec.</p>
+            <ul>
+                <li><a href="https://github.com/andybao/MediaTestRunner">GitHub repository</a></li>
+                <li><a href="https://youtu.be/GQjkDOOLegE">Video Demo on YouTube</a></li>
+            </ul>
+        </fieldset>
+    </div>
+</body>
+<script src="home/dist/app.js"></script>
+</html>

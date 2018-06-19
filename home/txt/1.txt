@@ -1,0 +1,20 @@
+I will show my ability with
+4 apps today:
+
+1.Single page application -
+  content management system
+  - PHP, MySQL, Ajax
+
+2.An online chat app.
+ - C#, .NET entity framework
+ - SignalR library
+ - Azure Cloud
+
+3.A pure javascript game.
+ - OOP (Object Oriented
+   Programming)
+
+4.This automation demo.
+ - Node.js, webpack
+ - Python, Selenium
+

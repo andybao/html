@@ -20,7 +20,7 @@ $e = new editor();
         <div class="container">
 
             <div>
-                <h2 class="text-center">Faqs Management</h2>
+                <h2 class="text-center">Faqs Admin</h2>
 
                 <button id="create" class="btn btn-outline-dark text-center" onclick="create()">Create New Faq</button>
 
@@ -73,6 +73,19 @@ $e = new editor();
                     </td>
                     </tbody>
                 </table>
+            </div>
+
+            <div id="delete_div_id" class="invisible">
+                <div>
+                    <h3><strong id="delete_confirmation"></strong></h3>
+                </div>
+                <p id="delete_error_msg" class="text-danger"></p>
+                <h3 id="delete_title"></h3>
+                <p id="delete_info"></p>
+                <div>
+                    <button id="cancel_delete" class="btn btn-link" onclick="delete_cancel()">Cancel</button>
+                    <button id="submit_delete" class="btn btn-link" onclick="delete_submit()">Submit</button>
+                </div>
             </div>
         </div>
     </section id="faqs_admin">

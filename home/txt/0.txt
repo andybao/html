@@ -1,0 +1,10 @@
+Hey, My name's Andy Bao.
+I am a graduate of Humber
+College Web Development
+program.
+
+I love the command line, JS,
+DB and backend.
+
+Here is my business card.
+

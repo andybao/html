@@ -1,0 +1,5 @@
+1.2:
+The admin creates a new faq.
+And The client displays
+this new faq.
+

@@ -136,27 +136,61 @@ function edit_submit(html_id) {
     console.log(edit_error_msg_obj);
 }
 
+function delete_cancel() {
+    $('#delete_div_id').addClass('invisible');
+    $('#delete_confirmation').empty();
+    $('#delete_title').empty();
+    $('#delete_info').empty();
+    $('#delete_error_msg').empty();
+    $('#edit_div_id').show();
+    $('#new_div_id').show();
+    $('#create').show();
+}
+
+function delete_submit() {
+    var delConfirmText = $('#delete_confirmation').text();
+    var faq_id = delConfirmText.split(' ')[1];
+
+    var f = new faq(faq_id, null, null, 'delete');
+    var f_json = JSON.stringify(f);
+
+    var db_result = getObjFromJson(null, f_json);
+
+    if (db_result == true) {
+        location.reload(true);
+    } else {
+        $('#delete_error_msg').append(db_result);
+    }
+
+}
+
 function del(html_id) {
     var faq_id = getFaqId(html_id);
     var faq_obj = getObjFromJson(null, null, faq_id);
 
-    var title_text = faq_obj['faq_title'];
+    var title_text = 'Title: ' + faq_obj['faq_title'];
+    var info_text = 'Info: ' + faq_obj['faq_info'];
 
-    var delConfirmText = 'FAQ ' + faq_id + ' will be deleted!\n' + title_text;
+    var delConfirmText = 'FAQ ' + faq_id + ' will be deleted!';
+
+    $('#delete_confirmation').append(delConfirmText);
+    $('#delete_title').append(title_text);
+    $('#delete_info').append(info_text);
+
+    $('#delete_div_id').removeClass('invisible');
+    $('#delete_error_msg').empty();
+    $('#edit_div_id').hide();
+    $('#new_div_id').hide();
+    $('#create').hide();
+
+    /*
     var userInput = confirm(delConfirmText);
 
     if (userInput == true) {
 
-        var f = new faq(faq_id, null, null, 'delete');
-        var f_json = JSON.stringify(f);
 
-        var db_result = getObjFromJson(null, f_json);
 
-        if (db_result == true) {
-            location.reload(true);
-        }
-
-    }
+    }*/
 }
 
 function init(id) {

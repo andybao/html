@@ -1,8 +1,25 @@
-body {
-    background-color: linen;
+/*
+ *  demo-show
+ */
+.demo-div {
+    border: 2px solid black;
+    margin: 1%;
+    padding: 0;
+    background-color: gainsboro;
+}
+#demo-show-client {
+    margin-left: 2%;
 }
 
-.container {
+/*
+ *  Home
+ */
+
+body {
+    background-color: linen;
+    overflow: scroll;
+}
+#title {
     text-align:center;
     padding: 1em;
     margin: 1em;
@@ -17,12 +34,14 @@ fieldset {
     padding: 1em;
 }
 legend {
+    width: auto;
     background-color: thistle;
     border: 2px solid black;
     padding-left: 0.5em;
     padding-right: 0.5em;
     font-size: 1.5em;
 }
+
 p {
     margin: 0.5em;
 }
@@ -48,4 +67,8 @@ a:hover {
 }
 a:active {
     color: red;
+}
+#animation {
+    height: 100vh;
+    overflow: auto;
 }

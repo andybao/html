@@ -1,0 +1,7 @@
+Let's open client side of
+the first app now.
+
+1.1:
+Client side gets data from
+DB and displays it.
+
